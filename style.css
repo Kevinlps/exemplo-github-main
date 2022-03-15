@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "title";
+  src: url(./fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(./fonts/Ubuntu-Regular.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  margin: 30px auto;
+  width: 60%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "title";
+}
+
+#task-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#task-description {
+  border: none;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  padding: 5px 10px ;
+  width: 60%;
+  margin-right: 10px;
+  font-family:"regular" ;
+  text-align: center;
+}
+
+#task-form button {
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-family: "titlte";
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#task-list-area {
+  padding-left: 10%;
+}
+
+#task-list {
+  font-family: 'regular';
+}
+
+@media screen and (max-width: 768px ) {
+  #container {
+    width: 90%;
+    margin: 10px auto;
+  }
+  h1{
+    font-size: 120%;
+  }
+  #task-description{
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+  }
+  
+  #task-list {
+    padding: 0%;
+    font-size: 85%;
+  }
+
+
+}
