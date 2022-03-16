@@ -11,4 +11,15 @@ const addTask = (event) => {
   `
   $('#task-list').insertAdjacentHTML('beforeend', newTaskItem)
   $('#task-form').reset()
+  saveTask(taskDescription)
+}
+
+const saveTask = (task) => {
+  let tasksStr = localStorage.getItem('tasks')
+  if(!tasksStr){
+    const tasks = []
+    tasks.push(task)
+    tasksStr = JSON.stringify(tasks)
+    localStorage.setItem('tasks' , tasksStr)
+  }
 }
