@@ -40,3 +40,4 @@ const saveTask = (task) => {
   tasksStr = JSON.stringify(tasks)
   localStorage.setItem('tasks', tasksStr)
 }
+botaoA
